@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drag And Drop To-Do</title>
     <link rel="stylesheet" href="./index.css"/>
-
+    <script src="https://kit.fontawesome.com/9ad88e5a2c.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="add">
+        <input id="input" type="text" placeholder="Add the item"></input>  
+        <button type="submit" id="add"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
     <div class="container">
-        <div class="subcontainer">
+        <div class="subcontainer" id="start">
             <div class="header">ToDo</div>
-            <div class="item" draggable="true">Item1</div>
-            <div class="item" draggable="true">Item2</div> 
-            <div class="item" draggable="true">Item3</div>
-            <div class="item" draggable="true">Item4</div> 
-            <div class="item" draggable="true">Item5</div> 
+            <div class="item" draggable="true" contenteditable="true">Item1</div>
+            <div class="item" draggable="true" contenteditable="true">Item2</div> 
+            <div class="item" draggable="true" contenteditable="true">Item3</div>
+            <div class="item" draggable="true" contenteditable="true">Item4</div> 
+            <div class="item" draggable="true" contenteditable="true">Item5</div> 
         </div>
         <div class="subcontainer">
             <div class="header">In Progress</div>
