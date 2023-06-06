@@ -39,6 +39,8 @@ function dragEnd(e) {
     }, 0);
   }
 
+console.log(items)
+
 for(let i=0;i<items.length;i++){
     const item=items[i];
     item.addEventListener('dragstart', dragStart);
@@ -58,6 +60,6 @@ for(let i=0;i<items.length;i++){
             console.log(draggedItem.parentNode,"thus")
             // draggedItem.parentNode.removeChild(draggedItem);
             subcontainer.appendChild(draggedItem)
-        }) 
+        })
     }
 }
