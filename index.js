@@ -9,6 +9,7 @@ let draggedItem=null;
 add.addEventListener('click',function(){
     if(Array.from(start.childNodes).filter(ele => ele.className ==="item").length===5){
         alert("Exceeds the maximum Limit\n Please push the existing item to In Progress");
+        input.value=null;
     }
     else{
             let newItem=document.createElement("div")
