@@ -72,3 +72,8 @@ button{
     text-align: center;
     min-width:40px ;
 }
+i{
+   display:flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
