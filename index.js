@@ -13,6 +13,8 @@ add.addEventListener('click',function(){
       input.value=null;
     }
     else{
+      if(input.value!==""){
+          console.log(typeof(input.value))
           let spanItem=document.createElement("span")
           spanItem.className="delete-button"
           let deleteIcon=document.createElement("i")
@@ -30,6 +32,7 @@ add.addEventListener('click',function(){
           newItem.addEventListener('dragstart', dragStart);
           newItem.addEventListener('dragend', dragEnd);
           newItem.addEventListener('click', deleteItem);
+      }
     }  
 })
 
