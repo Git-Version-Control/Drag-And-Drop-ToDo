@@ -21,7 +21,7 @@ input{
     line-height: 2rem;
     vertical-align: middle;
 }
-button{
+#add{
     background-color: inherit;
     color:white;
     border:none;
@@ -30,6 +30,11 @@ button{
   vertical-align: middle;
   transition: color .25s;
   width:5%;
+}
+button{
+    height:50px;
+    width:50px;
+    line-height: 2rem;
 }
 .container{
     display: flex;
@@ -43,7 +48,7 @@ button{
     display:flex;
     flex:1;
     flex-flow: column;
-    margin: 30px;
+    margin:8%;
     height:100%;
     width:30%;
     border:1px solid white;
@@ -55,25 +60,41 @@ button{
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size: 90%; 
+    font-size: 1rem; 
     width:100%;
     height:2rem;
-    background-color: cornflowerblue;
-    color:white;
+    background-color: #b678d8;
+    color:rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:400;
     border-radius: 5px;
     min-width:40px ;
-
+    text-align: center;
 }
 .item{
-    background-color: silver;
+    background-color: #ecece5;
     margin: 5%;
     padding:8px;
     flex:1;
     text-align: center;
     min-width:40px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:1rem;
 }
 i{
    display:flex;
    justify-content: flex-end;
    align-items: flex-end;
 }
+.delete-button{
+    margin-left: 1rem;
+    color:rgb(129, 12, 12)
+}
+.icon{
+    background-color: white;
+}
+.add>div>i{
+    background-color: white;
+
+}
+
